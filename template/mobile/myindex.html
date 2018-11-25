@@ -1,0 +1,183 @@
+
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>我的口红</title>
+    <link rel="stylesheet" href="{MODULE_URL}public/css/weui.css">
+    <link rel="stylesheet" href="{MODULE_URL}public/css/kouhong.css?v=1543045630">
+    <link rel="stylesheet" href="{MODULE_URL}public/css/member.css?v=1543045630">
+    <link rel="stylesheet" href="{MODULE_URL}public/css/layer.css?v=3.0.3303" id="layuicss-skinlayercss">
+    <style>
+        a{
+            color:#333333;
+        }
+        .mask {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0,0,0,.5);
+            z-index: 999999;
+        }
+        .mask > img.share_img {
+            width: 80%;
+            position: relative;
+            top: 10px;
+            left: 10%;
+        }
+        .dolist{
+            width:100%;
+            height:auto;
+            margin-top:20px;
+            margin-bottom:100px;
+            border-top: 1px solid #eee;
+        }
+        .list-item{
+            display:flex;
+            display: -webkit-flex;
+            width:100%;
+            height:50px;
+        }
+        .list-item .l-item{
+            width:50%;
+            height:50px;
+            display:flex;
+            display: -webkit-flex;
+            border-left:1px solid #eee;
+            border-bottom:1px solid #eee;
+            justify-content: center;
+        }
+        .list-item .l-item.l-border{
+            border-left:none;
+        }
+        .list-item .l-item>img{
+            width:20px;
+            height:20px;
+            margin-top:15px;
+        }
+        .list-item .l-item>div{
+            line-height:50px;
+            margin-left:10px;
+            color:#333333;
+        }
+        .copyright{
+            width: 80%;
+            margin: 0 10%;
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 70px;
+        }
+        .kh_title>span{
+            padding: 3px 5px;
+            background: #fff;
+            color: #ff27a4;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            font-size: 10px;
+            margin-left: 7px;
+        }
+        .kh_title>img{
+            width:20px;
+            height:20px;
+            vertical-align: sub;
+            margin-right:5px;
+        }
+        .b-item{
+            width: 100%;
+            display:flex;
+            height:80px;
+            -moz-box-shadow:1px 1px 3px #ff27a4;
+            -webkit-box-shadow:1px 1px 3px #ff27a4;
+            box-shadow:1px 1px 3px #ff27a4;
+            border: 1px solid #ff27a4;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .b-item .b-img{
+            width: 60px;
+            display:flex;
+            height:60px;
+            border-radius: 50%;
+        }
+        .b-item .b-title{
+            flex:2;
+            height:80px;
+            line-height:80px;
+            color: #333333;
+            text-align: left;
+        }
+        .b-item .b-price{
+            flex:1;
+            height:80px;
+            line-height:80px;
+            color: #ff27a4;
+            text-align: right;
+            margin-right:10px;
+        }
+    </style></head>
+
+<body style="--wx_color:#ff27a4;--wx_color1:#ff27a4;--wx_color2:#fff1f4;--wx_fcolor:#333333;--wx_fcolor1:#999999;">
+<div class="page " id="page">
+    <div class="bg_img" style="background:url(https://h5.52mr.xin/addons/junsion_winaward/public/img/bg22.png) no-repeat; background-size:100% auto;-moz-background-size:100% auto">
+        <div class="header" style="padding-top:10px;">
+            <div class="kh_user">
+                <img id="header_url" src="{MODULE_URL}icon.jpg">
+            </div>
+            <div class="kh_title" style="font-size:13px;">普通会员</div>            <div class="kh_title" style="font-size:13px;">演示示例版(以下数据并非真实数据)</div>
+        </div>
+        <div class="kh_box">
+            <div class="kh_box_item">
+                <a href="#" class="kh_grid line"  id="my_kh1">
+                    <div class="kh_my">剩余挑战次数</div>
+                    <div class="kh_grid_box">
+                        <div class="kh_grid_img">
+                            <img src="{MODULE_URL}icon.jpg">
+                        </div>
+                        <div class="kh_grid_num" id="kh_num">100</div>
+                    </div>
+                </a>
+                <a href="#" class="kh_grid line" id="my_kh2">
+                    <div class="kh_my">挑战成功次数</div>
+                    <div class="kh_grid_box">
+                        <div class="kh_grid_pic"><text id="kh_pic">40</text></div>
+                    </div>
+                </a>
+                <a href="#" class="kh_grid">
+                    <div class="kh_my">总挑战次数</div>
+                    <div class="kh_grid_box">
+                        <div class="kh_grid_pic"><text id="kh_pic">3</text></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 菜单 -->
+    <div class="dolist">
+    </div>
+    <div style="width:100%;height:80px;"></div>
+    <div class="footer_box" style="background:#ffffff">
+        <div class=" footer_in">
+            <div class="item_cell_boxs">
+                <div class="footer_item" style="width:50%">
+                    <a href="{php echo $this->createMobileUrl('index')}" class="footer_button click_button" style="background:#fff;">
+                        <img class="footer_item_img" src="{MODULE_URL}static/img/index_my_icon.png">
+                        <div class="footer_item_name">首页</div>
+                    </a>
+                </div>
+                <div class="footer_item" style="width:50%">
+                    <a href="{php echo $this->createMobileUrl('myindex')}" class="footer_button click_button" style="background:#fff;">
+                        <img class="footer_item_img" src="{MODULE_URL}static/img/index_my_icon.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="{MODULE_URL}public/js/jquery-3.2.1.min.js"></script>
+<script src="{MODULE_URL}public/js/layer.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+

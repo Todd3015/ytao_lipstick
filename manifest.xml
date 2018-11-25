@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="0.6">
+	<application setting="true">
+		<name><![CDATA[挑战抖抖口红小游戏]]></name>
+		<identifie><![CDATA[ytao_lipstick]]></identifie>
+		<version><![CDATA[1.0]]></version>
+		<type><![CDATA[game]]></type>
+		<ability><![CDATA[]]></ability>
+		<description><![CDATA[挑战抖抖口红小游戏演示版.]]></description>
+		<author><![CDATA[Todd3015]]></author>
+		<url><![CDATA[http://bbs.we7.cc/]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="unsubscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="enter" />
+		</subscribes>
+		<handles>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="enter" />
+		</handles>
+		<rule embed="true" />
+	</platform>
+	<bindings>
+		<cover call="getIndex">
+			<entry title="便利店首页" do="index" state="" direct="true" />
+		</cover>
+	</bindings>
+	<install></install>
+	<uninstall></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>
