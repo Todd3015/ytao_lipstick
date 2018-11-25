@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.we7.cc" versionCode="">
+	
+	<application setting='true'>
+		<name><![CDATA[口红机小游戏尝鲜版]]></name>
+
+		<identifie><![CDATA[yingtao_lipstick]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[]]></ability>
+
+		<type><![CDATA[h5game]]></type>
+
+		<description><![CDATA[免费抖音的口红机想必大家比较熟悉了，闯3关，抖抖口红小游戏。]]></description>
+
+		<author><![CDATA[Todd3015]]></author>
+
+		<url><![CDATA[]]></url>
+
+		<setting><![CDATA[]]></setting>
+
+	</application>
+
+	
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="app" />
+	</supports>
+
+	</platform>
+
+	
+	<bindings>
+
+		<cover>
+			<entry title="首页" do="index" state="index" direct="" />
+		</cover>
+
+	</bindings>
+
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>
