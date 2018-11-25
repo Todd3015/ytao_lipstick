@@ -2,9 +2,9 @@
 <manifest xmlns="http://www.we7.cc" versionCode="">
 	
 	<application setting='true'>
-		<name><![CDATA[口红机小游戏尝鲜版]]></name>
+		<name><![CDATA[抖抖口红机小游戏尝鲜版]]></name>
 
-		<identifie><![CDATA[yingtao_lipstick]]></identifie>
+		<identifie><![CDATA[ytao_lipstick]]></identifie>
 
 		<version><![CDATA[1.0.0]]></version>
 
@@ -12,7 +12,7 @@
 
 		<type><![CDATA[h5game]]></type>
 
-		<description><![CDATA[免费抖音的口红机想必大家比较熟悉了，闯3关，抖抖口红小游戏。]]></description>
+		<description><![CDATA[免费抖抖口红机游戏，无限畅玩]]></description>
 
 		<author><![CDATA[Todd3015]]></author>
 
@@ -39,7 +39,7 @@
 	<bindings>
 
 		<cover>
-			<entry title="首页" do="index" state="index" direct="" />
+			<entry title="首页" do="index" state="首页" direct="" />
 		</cover>
 
 	</bindings>

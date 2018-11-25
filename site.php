@@ -1,13 +1,13 @@
 <?php
 /**
- * yingtao_lipstick模块微站定义
+ * ytao_lipstick模块微站定义
  *
  * @author Todd3015
  * @url
  */
 defined('IN_IA') or exit('Access Denied');
 
-class Yingtao_lipstickModuleSite extends WeModuleSite {
+class Ytao_lipstickModuleSite extends WeModuleSite {
 
     public function __construct()
     {

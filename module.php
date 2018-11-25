@@ -1,17 +1,14 @@
 <?php
 /**
- * yingtao_lipstick模块定义
+ * ytao_lipstick模块定义
  *
  * @author Todd3015
- * @url
+ * @url 
  */
 defined('IN_IA') or exit('Access Denied');
 
-class Yingtao_lipstickModule extends WeModule {
+class Ytao_lipstickModule extends WeModule {
 
 
-    public function welcomeDisplay($menus = array()) {
-        //这里来展示DIY管理界面
-        include $this->template('welcome');
-    }
+
 }
